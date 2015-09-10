@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int pasarporValor(int);
+int pasarporReferencia(int *);
+
+int main()
+{
+
+    int a=4; //
+
+    pasarporValor(a);
+    cout <<"\nEl valor que se va a guardar en n es: "<< a << endl;
+
+    pasarporReferencia(&a);
+    cout <<"\nEl valor que se va a guardar en n es: "<< a << endl;
+
+    return 0;
+
+}
+
+int pasarporValor(int c)//almacena la copia
+{
+    c=128;
+    return c;
+}
+
+
+int pasarporReferencia(int *refern)
+{
+    *refern = 106;
+
+}
